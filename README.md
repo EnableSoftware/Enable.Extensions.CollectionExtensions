@@ -13,7 +13,7 @@ var collection = new HashSet<int>();
 source.AddRange(collection);
 ```
 
-The RemoveRange() method takes an IEnumerable<T> collection and removes the items in the collection to the source ICollection<T>.
+The RemoveRange() method takes an IEnumerable<T> collection and removes the items in the collection from the source ICollection<T>.
 
 ```c#
 var source = new HashSet<int>();
@@ -22,7 +22,7 @@ var collection = new HashSet<int>();
 source.RemoveRange(collection);
 ```
 
-The Batch() method takes an int batchSize variable and returns a list of lists (List<List<T>>) with the specified batch size.
+The Batch() method takes an int batchSize variable and returns a list of lists with the specified batch size.
 
 ```c#
 var source = new HashSet<int>();
