@@ -1,4 +1,4 @@
-# Contributing to DelimitedDataParser
+# Contributing to Enable.Extensions.CollectionExtensions
 
 Firstly, thanks for taking the time to contribute to Enable.Extensions.CollectionExtensions! 
 
