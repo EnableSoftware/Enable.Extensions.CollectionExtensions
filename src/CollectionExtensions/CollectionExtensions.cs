@@ -38,7 +38,7 @@ namespace Enable.Extensions
 
             if (source.Count() > 0)
             {
-                var totalNumberOfBatches = (int)Math.Ceiling((float)source.Count() / (float)batchSize);
+                var totalNumberOfBatches = (int)Math.Ceiling((float)source.Count / (float)batchSize);
 
                 for (var i = 0; i < totalNumberOfBatches; i++)
                 {
