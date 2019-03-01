@@ -1,7 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard1.0;net40</TargetFrameworks>
+    <CodeAnalysisRuleSet>../../CustomExtendedCorrectnessRules.ruleset</CodeAnalysisRuleSet>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>Enable.Extensions.CollectionExtensions</AssemblyName>
+    <Version></Version>
+    <Authors>Enable</Authors>
+    <Description>C# extensions for modifying collections.</Description>
+    <Copyright>Copyright © Enable</Copyright>
+    <PackageProjectUrl>https://github.com/EnableSoftware/Enable.Extensions.CollectionExtensions</PackageProjectUrl>
+    <PackageIconUrl>https://github.com/EnableSoftware.png</PackageIconUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/EnableSoftware/Enable.Extensions.CollectionExtensions/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/EnableSoftware/Enable.Extensions.CollectionExtensions</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
