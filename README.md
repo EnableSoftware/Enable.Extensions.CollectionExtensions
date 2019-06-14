@@ -30,3 +30,11 @@ var batchSize = 5;
 
 var batches = source.Batch(batchSize);
 ```
+
+The DistinctBy() method takes an object property and returns a collection of objects which are distinct by that property.
+
+```c#
+var source = new HashSet<Person>();
+
+source.DistinctBy(o => o.Email)
+```
