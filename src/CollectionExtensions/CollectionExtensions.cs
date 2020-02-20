@@ -36,7 +36,7 @@ namespace Enable.Extensions
 
             var allBatches = new List<List<T>>();
 
-            if (source.Count() > 0)
+            if (source.Count > 0)
             {
                 var totalNumberOfBatches = (int)Math.Ceiling((float)source.Count / (float)batchSize);
 
