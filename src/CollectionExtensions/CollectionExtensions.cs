@@ -50,12 +50,12 @@ namespace Enable.Extensions
             return allBatches;
         }
 
-        public static IEnumerable<T> DistinctBy<T, TProp>(this IEnumerable<T> source, Func<T, TProp> property)
+        public static List<T> DistinctBy<T, TProp>(this ICollection<T> source, Func<T, TProp> property)
         {
-            Argument.IsNotNull(source, "source");
-            Argument.IsNotNull(property, "property");
+            Argument.IsNotNull(source, nameof(source));
+            Argument.IsNotNull(property, nameof(property));
 
-            return source.GroupBy(property).Select(o => o.First());
+            return source.AsEnumerable().GroupBy(property).Select(o => o.First()).ToList();
         }
     }
 }

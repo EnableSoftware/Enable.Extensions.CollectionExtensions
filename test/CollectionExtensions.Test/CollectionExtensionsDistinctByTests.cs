@@ -19,7 +19,7 @@ namespace Enable.Extensions
         public void DistinctBy_ThrowsIfSourceIsNull()
         {
             // Arrange
-            IEnumerable<Person> source = null;
+            ICollection<Person> source = null;
             Func<Person, string> property = person => person.EmailAddress;
 
             // Act
@@ -36,7 +36,10 @@ namespace Enable.Extensions
         public void DistinctBy_ThrowsIfPropertyIsNull()
         {
             // Arrange
-            IEnumerable<Person> source = _fixture.CreateMany<Person>();
+            var source = _fixture
+                .CreateMany<Person>()
+                .ToArray();
+
             Func<Person, string> property = null;
 
             // Act
@@ -53,7 +56,7 @@ namespace Enable.Extensions
         public void DistinctBy_ReturnsAnUnchangedCollectionIfNoDuplicatePropertyValuesAreFound()
         {
             // Arrange
-            var source = _fixture.CreateMany<Person>();
+            var source = _fixture.CreateMany<Person>().ToArray();
 
             // Act
             var peopleWithDistinctEmailAddresses = source.DistinctBy(o => o.EmailAddress);
@@ -87,8 +90,6 @@ namespace Enable.Extensions
 
         private class Person
         {
-            public int Id { get; set; }
-            public string Name { get; set; }
             public string EmailAddress { get; set; }
         }
     }
