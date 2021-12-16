@@ -14,7 +14,7 @@
     <Copyright>Copyright © Enable</Copyright>
     <PackageProjectUrl>https://github.com/EnableSoftware/Enable.Extensions.CollectionExtensions</PackageProjectUrl>
     <PackageIconUrl>https://github.com/EnableSoftware.png</PackageIconUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/EnableSoftware/Enable.Extensions.CollectionExtensions/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/EnableSoftware/Enable.Extensions.CollectionExtensions/main/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/EnableSoftware/Enable.Extensions.CollectionExtensions</RepositoryUrl>
   </PropertyGroup>
 
